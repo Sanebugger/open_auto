@@ -1,3 +1,24 @@
+
+# Project Title
+"Landing page of OPEN AUTO." 
+this repo contains source code for landing page of openauto website.
+
+# demo video of this website:
+https://photos.app.goo.gl/s2bw8Wro4paQVkKa8
+
+# demo gif of this desktop website:
+![demo](https://user-images.githubusercontent.com/96644306/192256764-cf14007c-6183-443c-ac41-c5312d2933c3.gif)
+
+# this is how it looks on smartphones:
+![demo-mobile](https://user-images.githubusercontent.com/96644306/192256910-a8adfca0-5bca-4f8a-ad48-6451d3fc38b7.gif)
+
+
+# Stack used
+# frontend: React,Bootstrap5,Raw CSS
+# backend: NodeJS,Express
+# Database: mongoDb
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
