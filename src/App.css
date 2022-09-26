@@ -1,38 +1,280 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(15,15,19);
+  color: white;
+}
+.body-top {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(15,15,19);
+}
+.body-bottom {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(15,15,19);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* ________________________________________________________________________________________________________________________________________________________ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  
+}
+
+.logo {
+  color: white;
+  cursor: pointer;
+}
+nav ul{
+  position: relative;
+  padding-top: 8px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2vh 2vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  color: #ffffff;
+  background-color: rgb(15,15,19);
+  border: 1px solid white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 409;
+  padding: 12px 36px;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: #ffffff;
+  color: black;
+}
+.button-Body-bottom{
+  color: #ffffff;
+  background-color: rgb(15,15,19);
+  border: 1px solid white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 409;
+  padding: 12px 36px;
+  text-decoration: none;
+  width: 50%;
+}
+.button-Body-bottom:hover{
+  background-color: #ffffff;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ________________________________________________________________________________________________________________________________________________________ */
+.heading{
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+.form{
+  margin-top: 7vh;
+}
+.inputBox {
+  margin: 15px 0px;
+  color: #ffffff;
+  background-color: rgb(15,15,19);
+  border: 1px solid white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 409;
+  padding: 12px 36px;
+  width: 50%;
+
+}
+.submit-button{
+  margin: 25px 0px;
+  color: #ffffff;
+  background-color: rgb(15,15,19);
+  border: 1px solid white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-weight: 409;
+  padding: 12px 36px;
+  width: 50%;
+  cursor: pointer;
+
+}
+.submit-button:hover{
+  background-color: white ;
+  color :black ;
+}
+/* ________________________________________________________________________________________________________________________ */
+.social-media{
+  display: flex;
+  justify-content: end;
+
+}
+.social-media ul{
+  position: relative;
+  padding-top: 8px;
+}
+
+.social-media ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2vh 2vh;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 60px;
+}
+.footer-right-top li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 2px 6px;
+  color: white;
+}
+.footer li {
+  list-style-type: none;
+  /* display: inline-block; */
+  padding: 2px 4px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* --------responsiveness  ------------------------------- */
+
+@media only screen and (max-width:650px) {
+  .nav-right{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .logo{
+    position: relative;
+    left: 100px;
+    top: 5px;
+    font-weight: bold;
+    cursor: pointer;
   }
+  .heading{
+    font-size: 26px;
+    font-weight: 200;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+  h1{
+    font-size: x-large;
+  }
+  .para{
+    font-size: small;
+  }
+
+  .inputBox {
+    margin: 4px 0px;
+    color: #ffffff;
+    background-color: rgb(15,15,19);
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 100;
+    padding: 5px 6px;
+    width: 100%;
+  }
+  .submit-button{
+    margin: 8px 0px;
+    color: #ffffff;
+    background-color: rgb(15,15,19);
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 300;
+    padding: 5px 6px;
+    width: 100%;
+  
+  }
+ 
+  .social-media ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 6px;
+    color: white;
+    position: relative;
+    left: -45px;
+    cursor: pointer;
+  }
+  .button-Body-bottom{
+    color: #ffffff;
+    background-color: rgb(15,15,19);
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 409;
+    padding: 12px 36px;
+    text-decoration: none;
+    width: 100%;
+  }
+  .footer-left{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-left .logo {
+      font-size: small;
+      position: relative;  
+      top: -35px;
+      cursor: pointer;
+      
+  }
+  .footer-left p {
+       display: none;
+  }
+  
+  .footer-right-top{
+    font-size: xx-small;
+    position: relative;
+    left: -100px;
+    cursor: pointer;
+
+  }
+ .soc-med-mobile{
+  display: none;
+ }
 }
