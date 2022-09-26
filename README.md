@@ -14,7 +14,7 @@ https://photos.app.goo.gl/s2bw8Wro4paQVkKa8
 
 
 # Stack used
-# frontend: React,Bootstrap5,Raw CSS
+# frontend: React,Bootstrap5,Raw CSS,React-icons
 # backend: NodeJS,Express
 # Database: mongoDb
 
